@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #4F6F52;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+#logo{
+    width: 100px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header ul li a{
+    text-decoration: none;
+    color: #F5EFE6;
+    font-weight: bold;
+    padding: 15px 45px;
+}
+.login{
+    padding: 14px 35px;
+    background-color: #1A4D2E;
+    margin: 0 15px;
+    border-radius: 24px;
+}
+#login{
+    background-color: #AFD198;
+    color: #1A4D2E;
+    transition: 0.5s ease;
+}
