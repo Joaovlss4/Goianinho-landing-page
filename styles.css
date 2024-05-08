@@ -12,9 +12,11 @@ header{
     align-items: center;
     padding: 30px;
     letter-spacing: 1px;
+    background-color: #024702;
+    height: 10vh;
 }
 #logo{
-    width: 100px;
+    width: 5vw;
 }
 header ul{
     list-style: none;
@@ -33,7 +35,7 @@ header ul li a{
     margin: 0 15px;
     border-radius: 24px;
 }
-#login{
+.active{
     background-color: #AFD198;
     color: #1A4D2E;
     transition: 0.5s ease;
