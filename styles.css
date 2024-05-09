@@ -55,19 +55,40 @@ p{
     margin: 10px 0;
 }
 section{
-    width: 75%;
+    width: 50%;
     align-items: center;
     background-color: #F5EFE6;
     padding: 50px 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-bottom: 120px;
 }
-.corpo{
-
-}
 #destaque{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+aside{
+    width: 15%;
+    position: absolute;
+    right: 30px;
+    padding: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.tweeta{
+    margin-bottom: 15px;
+    background-color: #D4E2D4;
+    border-radius: 8px;
+}
+#tweeta{
+    padding-right: 300px;
+    font-size: 20px;
+}
+
+.tweets-div{
+    margin-right: 20px;
 }
