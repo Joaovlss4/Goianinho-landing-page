@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: "Libre Franklin", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 body{
-    background-color: #4F6F52;
     width: 100%;
     height: auto;
+    background: #311706;
+    color: #F5EFE6;
 }
 header{
     display: flex;
@@ -15,7 +17,7 @@ header{
     align-items: center;
     padding: 30px;
     letter-spacing: 1px;
-    background-color: #024702;
+    background-color: #8c2f10;
     height: 10vh;
 }
 #logo{
@@ -31,64 +33,104 @@ header ul li a{
     color: #F5EFE6;
     font-weight: bold;
     padding: 15px 45px;
+    text-transform: uppercase;
 }
-.login{
+#login{
     padding: 14px 35px;
-    background-color: #1A4D2E;
+    background-color: #3a1a03;
     margin: 0 15px;
-    border-radius: 24px;
-}
-.active{
-    background-color: #AFD198;
-    color: #1A4D2E;
+    border-radius: 8px;
     transition: 0.5s ease;
+    text-transform: uppercase;
+}
+#login:hover{
+    background-color: #F5EFE6;
+    color: #572805;
+}
+#background-section{
+    overflow-y: hidden;
+}
+#background{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
 }
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+#historia{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.imagem-destaque{
+    width: 30%;
+    height: 30%;
+}
 h4{
     margin: 10px 0;
+    font-family: "Raleway", sans-serif;
 }
 p{
     margin: 10px 0;
 }
-section{
-    width: 50%;
+.corpo-section{
+    width: 75%;
     align-items: center;
-    background-color: #F5EFE6;
     padding: 50px 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-bottom: 120px;
+    margin:120px 0;
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+.box-registro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+hr{
+    width: 500px;
+    margin: 0 20px;
+}
+.destaque{
+    display: flex;
+    height: 650px;
+    align-items: center;
+    text-align: center;
 }
 #destaque{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: #F5EFE6;
+    padding-bottom: 200px;
+    font-size: 48px;
 }
-aside{
-    width: 15%;
-    position: absolute;
-    right: 30px;
-    padding: 20px;
-}
-
-h2{
-    margin-bottom: 20px;
-}
-
-.tweeta{
-    margin-bottom: 15px;
-    background-color: #D4E2D4;
+#destaque-link{
+    text-decoration: none;
+    font-size: 32px;
+    color: #F5EFE6;
+    font-weight: bold;
+    background-color: #a73712;
+    padding: 10px;
     border-radius: 8px;
+    border: 2px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.2s ease;
 }
-#tweeta{
-    padding-right: 300px;
-    font-size: 20px;
-}
+#destaque-link:hover{
 
-.tweets-div{
-    margin-right: 20px;
+    background-color: #da4919;
+}
+.twitterblock h2{
+    text-align: center;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    margin: 20px 0;
+    font-size: 32px;
 }
