@@ -84,7 +84,7 @@ p{
     width: 75%;
     align-items: center;
     padding: 50px 50px;
-    margin:120px 0;
+    margin:120px 0 20px 0;
 }
 h1{
     font-family: "Raleway", sans-serif;
@@ -111,7 +111,7 @@ hr{
     justify-content: space-between;
     align-items: center;
     color: #F5EFE6;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
     font-size: 48px;
 }
 #destaque-link{
