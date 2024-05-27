@@ -1,105 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goianinho Adventure</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="../../images/logo.png" id="logo" />
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="/pages/LoginPage/login.html" class="login" id="login"
-            >Login</a
-          >
-        </li>
-      </ul>
-    </header>
-    <section id="background-section">
-      <img src="/images/savana.jpg" id="background">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goianinho Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <img src="../../images/logo.png" id="logo" />
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="./pages/Galeria/galeria.html">Galeria</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/pages/LoginPage/login.html" class="login active" id="login">Login</a>
+        <a class="sair active" id="sair">Sair</a>
+      </li>
+    </ul>
+  </header>
+  <section id="background-section">
+    <img src="/images/savana.jpg" id="background">
+  </section>
+  <main>
+    <div class="destaque">
+      <h1 id="destaque">Bem-vindo ao mundo do Goianinho Adventure!</h1>
+    </div>
+    <div class="box-registro">
+      <div class="line">
+        <hr color="#F5EFE6">
+      </div>
+      <div id="registrar">
+        <a href="/pages/SignUpPage/pagina_registro.html" id="destaque-link">Registre-se Agora</a>
+      </div>
+      <div class="line">
+        <hr color="#F5EFE6">
+      </div>
+    </div>
+    <section class="corpo-section">
+      <div class="corpo" id="historia">
+        <div class="texto">
+          <h2>O que é Goianinho Adventure?</h2>
+          <p>
+            Em uma pequena cidade no coração do cerrado goiano, vive um garoto
+            destemido chamado Goianinho. Ele sempre teve uma ligação especial
+            com a natureza ao seu redor, fascinado pela fauna, flora e vegetação
+            únicas do cerrado. Um dia, enquanto explorava os arredores de sua
+            casa, Goianinho encontrou um antigo mapa que parecia indicar a
+            localização de um tesouro perdido.
+          </p>
+
+          <p>
+            Determinado a desvendar esse mistério e proteger a natureza que
+            tanto ama, Goianinho decide embarcar em uma aventura emocionante
+            pelo cerrado de Goiás. Munido apenas de seu chapéu, sua curiosidade
+            e coragem, ele parte em uma jornada para encontrar o tesouro
+            perdido, enquanto aprende sobre a rica biodiversidade e os
+            ecossistemas únicos do cerrado.
+          </p>
+
+          <p>
+            Ao longo de sua jornada, Goianinho enfrentará desafios e perigos,
+            mas também fará novos amigos e descobrirá segredos incríveis sobre a
+            fauna, flora e vegetação do cerrado. Cada etapa da sua aventura será
+            uma oportunidade de aprender e se maravilhar com a natureza ao seu
+            redor.
+          </p>
+
+          <p>
+            O Goianinho Adventure é mais do que um jogo, é uma jornada educativa
+            e emocionante para crianças e adolescentes, ensinando sobre a
+            importância da preservação do meio ambiente e promovendo o amor e o
+            respeito pela natureza. Junte-se ao Goianinho nessa incrível
+            aventura e descubra os segredos do cerrado de Goiás!
+          </p>
+        </div>
+        <img src="images/logo.png" class="imagem-destaque">
+      </div>
+      <div class="class" id="recursos">
+        <h2>Exploração do Cerrado</h2>
+        <p>
+          Mapa interativo que permite aos jogadores explorarem diferentes
+          regiões do cerrado goiano, como matas de galeria, campos rupestres,
+          cerrado típico e cerrado denso.
+        </p>
+        <h2>Diversidade de Biomas</h2>
+        <p>
+          Apresentação dos diferentes biomas do cerrado, com destaque para a
+          fauna e flora características de cada um.
+        </p>
+      </div>
     </section>
-    <main>
-      <div class="destaque">
-        <h1 id="destaque">Bem-vindo ao mundo do Goianinho Adventure!</h1>
-      </div>
-      <div class="box-registro">
-            <div class="line">
-                <hr color="#F5EFE6">
-            </div>
-            <div id="registrar">
-                <a href="/pages/SignUpPage/pagina_registro.html" id="destaque-link">Registre-se Agora</a>
-            </div>
-            <div class="line">
-                <hr color="#F5EFE6">
-            </div>
-      </div>
-      <section class="corpo-section">
-        <div class="corpo" id="historia">
-          <div class="texto">
-              <h2>O que é Goianinho Adventure?</h2>
-              <p>
-                Em uma pequena cidade no coração do cerrado goiano, vive um garoto
-                destemido chamado Goianinho. Ele sempre teve uma ligação especial
-                com a natureza ao seu redor, fascinado pela fauna, flora e vegetação
-                únicas do cerrado. Um dia, enquanto explorava os arredores de sua
-                casa, Goianinho encontrou um antigo mapa que parecia indicar a
-                localização de um tesouro perdido.
-              </p>
-    
-              <p>
-                Determinado a desvendar esse mistério e proteger a natureza que
-                tanto ama, Goianinho decide embarcar em uma aventura emocionante
-                pelo cerrado de Goiás. Munido apenas de seu chapéu, sua curiosidade
-                e coragem, ele parte em uma jornada para encontrar o tesouro
-                perdido, enquanto aprende sobre a rica biodiversidade e os
-                ecossistemas únicos do cerrado.
-              </p>
-    
-              <p>
-                Ao longo de sua jornada, Goianinho enfrentará desafios e perigos,
-                mas também fará novos amigos e descobrirá segredos incríveis sobre a
-                fauna, flora e vegetação do cerrado. Cada etapa da sua aventura será
-                uma oportunidade de aprender e se maravilhar com a natureza ao seu
-                redor.
-              </p>
-    
-              <p>
-                O Goianinho Adventure é mais do que um jogo, é uma jornada educativa
-                e emocionante para crianças e adolescentes, ensinando sobre a
-                importância da preservação do meio ambiente e promovendo o amor e o
-                respeito pela natureza. Junte-se ao Goianinho nessa incrível
-                aventura e descubra os segredos do cerrado de Goiás!
-              </p>
-          </div>
-          <img src="images/logo.png" class="imagem-destaque">
-        </div>
-        <div class="class" id="recursos">
-          <h2>Exploração do Cerrado</h2>
-          <p>
-            Mapa interativo que permite aos jogadores explorarem diferentes
-            regiões do cerrado goiano, como matas de galeria, campos rupestres,
-            cerrado típico e cerrado denso.
-          </p>
-          <h2>Diversidade de Biomas</h2>
-          <p>
-            Apresentação dos diferentes biomas do cerrado, com destaque para a
-            fauna e flora características de cada um.
-          </p>
-        </div>
-      </section>
-      <div class="twitterblock">
-        <h2>
-            Plataforma do desenvolvimento.
-        </h2>
-        <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Paper Trail is a top-down puzzle adventure about leaving home, set in a foldable, paper world. On the journey, you&#39;ll learn to fold the world, merging two sides to solve puzzles and uncover long-lost secrets.<br><br>Paper Trail, by Newfangled Games | <a href="https://twitter.com/NewfangledGames?ref_src=twsrc%5Etfw">@NewfangledGames</a> <a href="https://twitter.com/hashtag/MadeWithUnity?src=hash&amp;ref_src=twsrc%5Etfw">#MadeWithUnity</a> <a href="https://t.co/sRzbcQDRT1">pic.twitter.com/sRzbcQDRT1</a></p>&mdash; Unity for Games (@unitygames) <a href="https://twitter.com/unitygames/status/1794005815717662842?ref_src=twsrc%5Etfw">May 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </main>
-  </body>
+    <div class="twitterblock">
+      <h2>
+        Plataforma do desenvolvimento.
+      </h2>
+      <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+        <p lang="en" dir="ltr">Paper Trail is a top-down puzzle adventure about leaving home, set in a foldable, paper
+          world. On the journey, you&#39;ll learn to fold the world, merging two sides to solve puzzles and uncover
+          long-lost secrets.<br><br>Paper Trail, by Newfangled Games | <a
+            href="https://twitter.com/NewfangledGames?ref_src=twsrc%5Etfw">@NewfangledGames</a> <a
+            href="https://twitter.com/hashtag/MadeWithUnity?src=hash&amp;ref_src=twsrc%5Etfw">#MadeWithUnity</a> <a
+            href="https://t.co/sRzbcQDRT1">pic.twitter.com/sRzbcQDRT1</a></p>&mdash; Unity for Games (@unitygames) <a
+          href="https://twitter.com/unitygames/status/1794005815717662842?ref_src=twsrc%5Etfw">May 24, 2024</a>
+      </blockquote>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+
 </html>

@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Acesse sua conta</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Goianinho Adventure Login View"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&family=Playfair+Display:wght@600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-        <img src="../../images/logo.png" id="logo">
-        <ul>
-            <li><a href="/index.html">Início</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul>
-            <li><a href="/pages/SignUpPage/pagina_registro.html" class="login" id="register">Registre-se</a></li>
-            <li><a href="/pages/LoginPage/login.html" class="login active" id="login">Login</a></li>
-        </ul>
-    </header>
-    <section class="main-content">
-      <div class="login-card">
-        <h1 class="form-header playfair-font">Bem vindo de volta</h1>
-        <form>
-          <div class="input-group">
-            <input type="text" class="input-email franklin-font" required id="input-email" />
-            <div class="absolute-element">
-              <span class="placeholder-text">Email address</span>
-              <span class="btn-clear" onClick="clearInput()">
-                <img src="./img/clear-icon.png" alt="" />
-              </span>
-            </div>
-          </div>
-          <div class="input-group">
-            <input type="password" class="input-email franklin-font" required id="input-email" />
-            <div class="absolute-element">
-              <span class="placeholder-text">Password</span>
-              <span class="btn-clear" onClick="clearInput()">
-                <img src="./img/clear-icon.png" alt="" />
-              </span>
-            </div>
-          </div>
-          <button type="submit" class="btn-next franklin-font">Login</button>
-        </form>
-        <div class="or-legend">
-          <div class="vertical-line"></div>
-          <span class="or-text">ou</span>
-          <div class="vertical-line"></div>
-        </div>
-        <div class="other-sign">
 
-          <div class="other-sign-list">
-            <div class="icon-sign">
-              <img src="/images/twitter.svg" alt="" />
-            </div>
-            <div class="title-sign franklin-font">Continue com Twitter</div>
-          </div>
-        </div>
-        <span class="register franklin-font">Não possui conta? <a href="">Crie aqui</a></span>
+<head>
+  <title>Acesse sua conta</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Goianinho Adventure Login View" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet" />
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <a href="../../index.html">
+      <img src="../../images/logo.png" id="logo">
+
+    </a>
+    <ul>
+      <li><a href="../../index.html">Início</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <ul>
+
+
+        <li><a href="/pages/SignUpPage/pagina_registro.html" class="login" id="register">Registre-se</a></li>
+        <li><a href="/pages/LoginPage/login.html" class="login active" id="login">Login</a></li>
+    </ul>
+  </header>
+  <section class="main-content">
+    <div class="login-card">
+      <h1 class="form-header playfair-font">Bem vindo de volta</h1>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control shadow-sm" id="txtEmail" name="email" value="jv18.victor@gmail.com">
       </div>
+      <div class="form-group">
+        <label for="pwd">Senha:</label>
+        <input type="password" class="form-control shadow-sm" id="txtPassword" name="password" value="goianinho">
+      </div>
+      <button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+            
+      </form>
+      <div class="or-legend">
+        <div class="vertical-line"></div>
+        <span class="or-text">ou</span>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="other-sign">
+
+        <div class="other-sign-list">
+          <div class="icon-sign">
+            <img src="/images/twitter.svg" alt="" />
+          </div>
+          <div class="title-sign franklin-font">Continue com Twitter</div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Registro -->
+
+    <div class="register-card">
+      <h1 class="form-header playfair-font">Registre-se</h1>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control shadow-sm" id="txtEmailRegister" name="email" value="autista@gmail.com">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Senha:</label>
+        <input type="password" class="form-control shadow-sm" id="txtPasswordRegister" name="password" value = "123456">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Confirme sua senha:</label>
+        <input type="password" class="form-control shadow-sm" id="txtPasswordRegisterConfirm" name="password" value = "123456">
+      </div>
+      <button type="submit" class="btn btn-primary shadow" id="btnSignup">Signup</button>
+      </form>
 
 
 
-    </section>
+  </section>
 
-    <!-- ADDITIONAL CODE -- start YOU MIGHT NOT NEEDED -->
-    <footer class="franklin-font">
-      
-    </footer>
-    <!-- ADDITIONAL CODE -- end YOU MIGHT NOT NEEDED -->
-    <script>
-      function clearInput() {
-        document.getElementById('input-email').value = ''
-      }
-    </script>
-  </body>
+  <!-- ADDITIONAL CODE -- start YOU MIGHT NOT NEEDED -->
+  <footer class="franklin-font">
+
+  </footer>
+  <!-- ADDITIONAL CODE -- end YOU MIGHT NOT NEEDED -->
+  <script src="login.js"></script>
+</body>
+
 </html>

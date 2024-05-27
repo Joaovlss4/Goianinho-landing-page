@@ -1,0 +1,67 @@
+/* Estilos personalizados para a galeria */
+.card {
+    background-color: #8c2f10;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.card-img-top {
+    border-radius: 8px;
+}
+
+.card-body {
+    color: #F5EFE6;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #F5EFE6;
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: #311706;
+}
+
+header {
+    background-color: #8c2f10;
+}
+
+header ul li a.active {
+    background-color: #3a1a03;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    letter-spacing: 1px;
+    background-color: #8c2f10;
+    height: 10vh;
+}
+#logo{
+    width: 5vw;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+header ul li a{
+    text-decoration: none;
+    color: #F5EFE6;
+    font-weight: bold;
+    padding: 15px 45px;
+    text-transform: uppercase;
+}
+
+
+a:hover{
+    text-decoration: none;
+}

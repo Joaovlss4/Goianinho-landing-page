@@ -35,7 +35,9 @@ header ul li a{
     padding: 15px 45px;
     text-transform: uppercase;
 }
-#login{
+
+
+.active{
     padding: 14px 35px;
     background-color: #3a1a03;
     margin: 0 15px;
@@ -43,10 +45,12 @@ header ul li a{
     transition: 0.5s ease;
     text-transform: uppercase;
 }
-#login:hover{
+.active:hover{
     background-color: #F5EFE6;
     color: #572805;
 }
+
+
 #background-section{
     overflow-y: hidden;
 }
@@ -133,4 +137,13 @@ h2{
     font-family: "Raleway", sans-serif;
     margin: 20px 0;
     font-size: 32px;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+  }   
+  
+
+.nav-container .nav .nav-logo {
+  height: 48px;
 }
