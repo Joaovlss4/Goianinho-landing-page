@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Crie uma nova conta</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Goianinho Adventure Login View" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="../../images/logo.png" id="logo">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+      <li><a href="/pages/SignUpPage/pagina_registro.html" class="login" id="register">Registre-se</a></li>
+      <li><a href="/pages/LoginPage/login.html" class="login active" id="login">Login</a></li>
+    </ul>
+  </header>
+  <section class="main-content">
+    <div class="login-card">
+      <h1 class="form-header playfair-font">Registre-se</h1>
+      <form onsubmit="return validateForm()">
+        <div class="input-group">
+          <input type="text" class="input-email franklin-font" required id="input-email" />
+          <div class="absolute-element">
+            <span class="placeholder-text">Email</span>
+            <span class="btn-clear" onClick="clearInput('input-email')">
+              <img src="./img/clear-icon.png" alt="" />
+            </span>
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="password" class="input-password franklin-font" required id="password" />
+          <div class="absolute-element">
+            <span class="placeholder-text">Senha</span>
+            <span class="btn-clear" onClick="clearInput('password')">
+              <img src="./img/clear-icon.png" alt="" />
+            </span>
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="password" class="input-password franklin-font" required id="confirm-password" />
+          <div class="absolute-element">
+            <span class="placeholder-text">Confirme sua senha</span>
+            <span class="btn-clear" onClick="clearInput('confirm-password')">
+              <img src="./img/clear-icon.png" alt="" />
+            </span>
+            <input type="checkbox" onclick="togglePasswordVisibility('password', 'confirm-password')">
+            <span class="show-password">Mostrar Senha</span>
+          </div>
+        </div>
+        <button type="submit" class="btn-next franklin-font">Registrar</button>
+      </form>
+      <div class="or-legend">
+        <div class="vertical-line"></div>
+        <span class="or-text">ou</span>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="other-sign">
+        <div class="other-sign-list">
+          <div class="icon-sign">
+            <img src="/images/twitter.svg" alt="" />
+          </div>
+          <div class="title-sign franklin-font">Continue com Twitter</div>
+        </div>
+      </div>
+      <span class="register franklin-font">Já possui conta? <a href="/pages/LoginPage/login.html">Faça Login</a></span>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>Sobre Nós</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Links Úteis</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contato</h2>
+          <p>Email: contato@example.com</p>
+          <p>Telefone: (XX) XXXX-XXXX</p>
+        </div>
+        <div class="footer-section social">
+          <h2>Siga-nos</h2>
+          <div class="social-icons">
+            <a href="#"><img src="/images/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="/images/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="/images/instagram.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Goianinho Adventure | Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+  
+  <style>
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
+    .footer-content {
+      width: 25%;
+      margin: 10px 0;
+    }
+  
+    .footer-content h2 {
+      margin-bottom: 15px;
+    }
+  
+    .footer-content p,
+    .footer-content ul,
+    .footer-content li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    .footer-content ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-content ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    .footer-content ul li a:hover {
+      text-decoration: underline;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .social-icons a {
+      margin: 0 10px;
+    }
+  
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .footer-bottom {
+      margin-top: 20px;
+      font-size: 0.8em;
+    }
+  
+    @media (max-width: 768px) {
+      .footer-content {
+        width: 50%;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .footer-content {
+        width: 100%;
+      }
+    }
+  </style>
+  
+  <script>
+    function clearInput(inputId) {
+      document.getElementById(inputId).value = '';
+    }
+
+    function togglePasswordVisibility(...inputIds) {
+      inputIds.forEach(inputId => {
+        var x = document.getElementById(inputId);
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      });
+    }
+
+    function validateForm() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm-password").value;
+      if (password !== confirmPassword) {
+        alert("As senhas não coincidem!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+
+</html>
